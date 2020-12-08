@@ -43,21 +43,16 @@ class LinkedList {
         }
         console.log(str);
     }
-    search(element) {
-        let count = 0;
+    search(key) {
         let current = this.head;
-
         while (current != null) {
-
-            if (current.element === element)
-            {
-                return count;
+            if (current.element == key) {
+                return current.element;
             }
-                count++;
-                current = current.next;
+            current = current.next;
         }
 
-        return element;
+        return false;
     }
 
     removeFrom(index) {
