@@ -12,7 +12,7 @@ arr.forEach(element => {
 let display = OrderList.printList();
 console.log(display);
 
-fs.writeFileSync('./WriteOrderList.txt', display);
+fs.writeFileSync('./ReadOrderList.txt', display);
 
 let findNum = readline.question("enter the number you want to delete:");
 let check = OrderList.searchData(findNum);
@@ -26,7 +26,7 @@ else {
 let displayFile = OrderList.showList();
 console.log(displayFile);
 
-fs.writeFileSync('./WriteOrderList.txt', displayFile);
+fs.writeFileSync('./ReadOrderList.txt', displayFile.join(' '));
 
 
 
