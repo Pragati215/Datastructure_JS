@@ -12,7 +12,7 @@ arr.forEach(element => {
 let display = OrderList.printList();
 console.log(display);
 
-fs.writeFileSync('./WriteUnOrderList.txt', display);
+fs.writeFileSync('./ReadUnOrderList.txt', display);
 
 let name = readline.question("enter the name you want to delete:");
 let check = OrderList.searchData(name);
@@ -26,4 +26,4 @@ else {
 let displayFile = OrderList.showList();
 console.log(displayFile);
 
-fs.writeFileSync('./WriteUnOrderList.txt', displayFile);
+fs.writeFileSync('./ReadUnOrderList.txt', displayFile);

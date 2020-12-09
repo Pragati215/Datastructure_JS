@@ -1,7 +1,7 @@
-yash 
+yash
 priya
-bharati 
-megha 
-sneha 
+bharati
+megha
+sneha
 arati
-sayli
+sayli,manasi
