@@ -1,7 +1,10 @@
 //binary search word list program
-let readlineSync = require('readline-sync');
+class BinarySearch {
+       constructor () {
+           this.arr = [];
+       }
 
-function binarySearch(arr, object) {
+    binarySearch(arr, object) {
     let first = 0;
     let last = arr.length + 1;
 
@@ -23,13 +26,7 @@ function binarySearch(arr, object) {
     return -1;
 }
 
-arr = new Array();
-
-let lengthOfArr = readlineSync.question("Enter the length of array : ");
-for (let i = 0; i < lengthOfArr; i++) {
-    let num = readlineSync.question("Enter word: ");
-    arr.push(num);
 }
-object = readlineSync.question("Enter word to be searched : ");
+module.exports = new BinarySearch;
 
-console.log(binarySearch(arr, object));
+
