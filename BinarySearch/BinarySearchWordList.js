@@ -4,7 +4,7 @@ class BinarySearch {
            this.arr = [];
        }
 
-    binarySearch(arr, object) {
+    binarySearch() {
     let first = 0;
     let last = arr.length + 1;
 
@@ -16,10 +16,10 @@ class BinarySearch {
             return middle;
         } else if (arr[middle] < object) {
             // continue searching to the right
-            start = middle + 1;
+            first = middle + 1;
         } else {
             // search searching to the leff
-            end = middle - 1;
+            last = middle - 1;
         }
     }
 
