@@ -13,10 +13,10 @@ function stackOperations() {
             case 1:
                 var lengthOfStack = readlineSync.questionInt("Enter the size of stack: ");
 
-                while (stack.sizeOfStack() < lengthOfStack) {
+                while ( lengthOfStack > 0) {
                     let num = readlineSync.question("Enter number to push-");
                     stack.push(parseInt(num));
-                    this.size++;
+                    lengthOfStack--;
                 }
                 break;
             case 2:
